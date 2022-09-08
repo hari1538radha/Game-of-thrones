@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap');
+.Header
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: 'Cinzel Decorative', cursive;
+    margin-top: 20px;
+}
