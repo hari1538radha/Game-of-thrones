@@ -3,10 +3,10 @@ import { createSlice ,createAsyncThunk } from "@reduxjs/toolkit";
 export const getCharData = createAsyncThunk("Getdata", async ()=>
 {
     return fetch("https://thronesapi.com/api/v2/Characters").then((response)=>
-    {
+    
          response.json()
-       
-    });
+        
+    );
 
 }
 )
@@ -16,7 +16,7 @@ export const CharSlice = createSlice(
         name:"data",
         initialState:
         {
-            data: [],
+            datas: [],
             loading:false
         },
         extraReducers:
@@ -28,7 +28,7 @@ export const CharSlice = createSlice(
             [getCharData.fulfilled]:(state,action)=>
             {
                 state.loading =false;
-                state.data = action.payload;
+                state.datas = action.payload;
             },
             [getCharData.rejected]:(state,action)=>
             {
