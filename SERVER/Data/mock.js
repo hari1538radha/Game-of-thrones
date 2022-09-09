@@ -1,6 +1,6 @@
-export const data = [
+export const mockdata = [
         {
-            "id": 0,
+            "id": 53,
             "firstName": "Daenerys",
             "lastName": "Targaryen",
             "fullName": "Daenerys Targaryen",
