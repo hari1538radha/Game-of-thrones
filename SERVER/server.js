@@ -8,9 +8,7 @@ import mongoose from "mongoose";
 
 import { mongoURL } from "./Const/const.js";
 
-import { mockdata } from './Data/mock.js'
-
-import { getCharacter, insertData,getbyfamily } from "./Router/router.js"
+import { getCharacter, insertData,getbyfamily, allCharacter } from "./Router/router.js"
 
 
 
@@ -24,6 +22,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/insert", insertData)
+
+app.get("/allcharacter",allCharacter)
 
 app.get("/character",getCharacter)
 
