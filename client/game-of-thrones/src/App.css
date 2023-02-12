@@ -3,7 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background:rgb(70,130,180);
+
+}
+.background-div {
+    /* background-image: url(./Images/gotbackground.png);   */
+    background-color: rgb(85, 186, 245);
+    background-position: center;
+  
 }
 .content
 {
@@ -17,7 +23,7 @@
 
 .Maincontent
 {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 5px;
  
@@ -43,9 +49,10 @@
 }
 .onclickcontent
 {
-    background: white;
+    background: rgba(34, 32, 32, 0.319);
     padding: 30px;
     margin-right: 50px; 
+    color: white;
 }
 .Maincontent span 
 {

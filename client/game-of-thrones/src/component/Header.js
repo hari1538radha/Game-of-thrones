@@ -1,10 +1,8 @@
-import React from 'react'
-import "../css/Header.css"
+import React from "react";
+import "../css/Header.css";
 
 const Header = () => {
-  return (
-    <div className='Header'>Game of Thrones Character Api</div>
-  )
-}
+  return <div className="Header">Game of Thrones Character Api</div>;
+};
 
-export default Header
+export default Header;
